@@ -1,0 +1,2 @@
+====> load config from dual_baseline_aug3
+====> set seed 42

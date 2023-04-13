@@ -1,0 +1,29 @@
+====> load config from feats_aug_eng
+FEAT_ENG: True
+/notebooks/Track2/configs/local_aggr/dual_aggr.yaml
+s3://aicitychallenge2023/extracted_feats/dual_aggr/img_lang_feat_checkpoint_best.pth
+====> Generating s3://aicitychallenge2023/extracted_feats/dual_aggr/img_lang_feat_checkpoint_best.pth
+====> /datasets/aicitychallenge2023/test-tracks.json data load, ids: 33053
+====> SSM Siamese Enhanced Collator:
+====> Using visual backbone: SiameseDualEnhancedEncoder
+Loaded pretrained weights for efficientnet-b2
+Loaded pretrained weights for efficientnet-b2
+====> load checkpoint from /datasets/aicitychallenge2023/logs/dual_aggr/checkpoint_best.pth
+====> load checkpoint from /datasets/aicitychallenge2023/logs/dual_aggr/checkpoint_best.pth
+====> Query /datasets/aicitychallenge2023/test-queries.json load
+====> save pth to s3://aicitychallenge2023/extracted_feats/dual_aggr/img_lang_feat_checkpoint_best.pth
+====> load pth from s3://aicitychallenge2023/extracted_feats/dual_aggr/img_lang_feat_checkpoint_best.pth
+/notebooks/Track2/configs/local_aggr/feats_aug_eng_1.yaml
+s3://aicitychallenge2023/extracted_feats/feats_aug_eng_1/img_lang_feat_checkpoint_best.pth
+====> load pth from s3://aicitychallenge2023/extracted_feats/feats_aug_eng_1/img_lang_feat_checkpoint_best.pth
+/notebooks/Track2/configs/local_aggr/feats_aug_eng.yaml
+s3://aicitychallenge2023/extracted_feats/feats_aug_eng/img_lang_feat_checkpoint_best.pth
+====> load pth from s3://aicitychallenge2023/extracted_feats/feats_aug_eng/img_lang_feat_checkpoint_best.pth
+/notebooks/Track2/configs/local_aggr/feats_aug_text.yaml
+s3://aicitychallenge2023/extracted_feats/feats_aug_text/img_lang_feat_checkpoint_best.pth
+====> load pth from s3://aicitychallenge2023/extracted_feats/feats_aug_text/img_lang_feat_checkpoint_best.pth
+/notebooks/Track2/configs/local_aggr/aggr_non_linear.yaml
+s3://aicitychallenge2023/extracted_feats/aggr_non_linear/img_lang_feat_checkpoint_best.pth
+====> load pth from s3://aicitychallenge2023/extracted_feats/aggr_non_linear/img_lang_feat_checkpoint_best.pth
+Spatial true
+====> save logs/Test_Output/ensemble_spatial_w.json done
