@@ -13,7 +13,7 @@ from .preprocessing import extract_feats_from_nl
 import torchvision
 from transformers import BertTokenizer,RobertaTokenizer
 
-dcmsampled = False
+SAMPLE_FLAG = False
 
 def inference_vis_and_lang(config_name, args, enforced=False):
     arch_name = "local_aggr"
@@ -85,10 +85,10 @@ def inference_vis_and_lang(config_name, args, enforced=False):
                 lang_feats_dict = extract_feats_from_nl(cfg.DATA, queries[text_id]['nl'], queries[text_id]['nl_other_views'])
                 text = [lang_feats_dict["aug_txt"] + tt for tt in text]
                 car_text = [lang_feats_dict["aug_car"] + ctxt + lang_feats_dict["aug_car_end"] for ctxt in car_text]
-                global dcmsampled
-                if not dcmsampled:
+                global SAMPLE_FLAG
+                if not SAMPLE_FLAG:
                     print("Sample text:", text[0])
-                    dcmsampled = True
+                    SAMPLE_FLAG = True
 
             # same dual Text
             if cfg.MODEL.SAME_TEXT:

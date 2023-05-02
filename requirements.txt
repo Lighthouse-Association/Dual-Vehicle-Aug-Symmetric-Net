@@ -24,3 +24,5 @@ reFILE
 termcolor
 tabulate
 importlib
+smart_open
+wandb

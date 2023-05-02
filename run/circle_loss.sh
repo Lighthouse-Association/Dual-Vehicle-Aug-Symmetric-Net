@@ -10,7 +10,7 @@ mets='48'
 metm='0.3'
 clipm='0.'
 
-python3 -m Track2.main --name ${name} \
+python3 -m main --name ${name} \
 --config ${config} \
 --logs-dir logs/${name}-${metric}_${mets}_${metm} \
 MODEL.car_idloss False \

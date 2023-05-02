@@ -1,6 +1,8 @@
 import random
 
-dcmsampled=False
+SAMPLE_FLAG = False
+
+
 def rank_occurrence_cat(query, all_cat):
     cat_list = [(cat,) if type(cat) == str else cat for cat in all_cat]
     proc_query = query[:-1].lower()

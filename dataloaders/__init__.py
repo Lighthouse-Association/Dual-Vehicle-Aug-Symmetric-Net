@@ -1,9 +1,11 @@
 from ..preprocessing.transforms import build_vanilla_transforms, build_transforms, build_motion_transform
 import importlib
 
+ROOT = 'Dual-Vehicle-Aug-Symmetric-Net'
+
 
 def make_data_loader(arch_name, cfg, *args, **kwargs):
-    return importlib.import_module(f".{arch_name}", "Track2.dataloaders").make_data_loader(cfg, *args, **kwargs)
+    return importlib.import_module(f".{arch_name}", f"{ROOT}.dataloaders").make_data_loader(cfg, *args, **kwargs)
 
 def prepare_data(arch_name, cfg, is_train=True):
     if not cfg.DATA.CROP_AUG:
