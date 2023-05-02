@@ -2,7 +2,7 @@
 
 This repository contains the official code for the 7th place solution of the [7th AI City Challenge](https://www.aicitychallenge.org/) Track 2.
 
-Details about the architecture design and implementation can be found in the [paper](Symmetric_Network_with_Dual-vehicle_Attributes_Augmentation_for_Natural_Language_Vehicle_Retrieval.pdf)
+Details about the architecture design and implementation can be found in the [paper](Symmetric_Network_with_Dual-vehicle_Attributes_Augmentation_for_Natural_Language_Vehicle_Retrieval.pdf).
 
 ![snda](snda.jpg)
 
@@ -56,6 +56,7 @@ python3 prepare_outputs.py
 
 ### OSS Structure
 
+```
 .
 ├── logs                            # Checkpoints
 │   ├── aggr_non_linear
@@ -78,13 +79,13 @@ python3 prepare_outputs.py
 ├── test-queries.json  
 ├── train.json
 └── val.json
-
+```
 
 ## Contributors
 
 [![](https://avatars.githubusercontent.com/u/31373940?s=48&v=4)](https://github.com/quangminhdinh)
 [![](https://avatars.githubusercontent.com/u/76428643?s=48&v=4)](https://github.com/yuufong)
-[![](https://avatars.githubusercontent.com/u/44701370?s=48&v=4)](https://github.com/riderhuy)
+<a href="https://github.com/riderhuy"><img src="https://avatars.githubusercontent.com/u/44701370?v=4" width="48"></a>
 [![](https://avatars.githubusercontent.com/u/87028107?s=48&v=4)](https://github.com/hmkhoi2701)
 
 
